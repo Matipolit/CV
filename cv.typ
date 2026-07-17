@@ -43,7 +43,13 @@ Software Engineer with 3 years of commercial experience in test automation and e
       #icon("media/linkedin.svg") #link("https://linkedin.com/in/mateusz-polito/")[linkedin.com/in/mateusz-polito/]
 
       == SKILLS
-      *Languages:* Python, Rust, JavaScript / TypeScript, C/C++, SQL, Java \
+      *Languages:* \
+        Python ●●●●● \
+        Rust ●●●●○ \
+        JavaScript/TypeScript ●●●●○ \
+        C/C++ ●●●○○ \
+        Java ●●●○○ \
+        SQL ●●○○○ \
       *Frameworks:* React, Svelte, Axum, QT, FastAPI, Robot Framework \
       *Systems & Infrastructure:* Linux (including embedded), Docker, Git, nginx & Apache \
       *AI usage:* GitHub Copilot, Cursor, Local LLMs
