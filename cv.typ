@@ -47,6 +47,7 @@ Software Engineer with 3 years of commercial experience in test automation and e
         Python ●●●●● \
         Rust ●●●●○ \
         JavaScript/TypeScript ●●●●○ \
+        Bash ●●●●○ \
         C/C++ ●●●○○ \
         Java ●●●○○ \
         SQL ●●○○○ \
