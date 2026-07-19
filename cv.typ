@@ -67,7 +67,7 @@ Software Engineer with 3 years of commercial experience in test automation and e
     *Integration tester \@ Nokia* \
     _August 2022 - Mar 2024, Mar 2025 - Present_
     - Developed and maintained automated Python and Robot Framework test suites validating CPRI/eCPRI communication and embedded Linux software updates for radio units.
-    - Created an internal session management tool to monitor RDP and SSH usage across test setups, preventing conflicts and unexpected session drops among integration team members.
+    - Created an internal session management tool using Python to monitor RDP and SSH usage across test setups, preventing conflicts and unexpected session drops among integration team members.
     - Accelerated the generation of boilerplate test suites and refactored legacy Python scripts by integrating GitHub Copilot and Cursor into the development workflow.
     - Migrated multiple hardware test environments from Windows to Linux.
     - Worked frequently with hardware on-site (Radio units, specialized optical testing devices, optical fiber cables).
