@@ -1,12 +1,12 @@
 #set page(
   paper: "a4",
-  margin: (x: 1.5cm, y: 1.5cm)
+  margin: (x: 1.5cm, y: 1.2cm)
 )
-#set text(font: "Noto Sans", size: 10pt)
-#set par(justify: true)
+#set text(font: "Noto Sans", size: 10pt, hyphenate: false)
+
 #let icon(path) = box(
-  baseline: 15%, // Shifts the icon down slightly to match text center
-  height: 1em,   // Scales perfectly with your 10pt font
+  baseline: 15%, 
+  height: 1em,   
   image(path)
 )
 
@@ -21,77 +21,61 @@
   )
 ]
 
-#v(1.5em)
+#v(0.5em)
+
+#align(center)[
+  #icon("media/map-pin.svg") Wrocław, Poland | 
+  #icon("media/phone.svg") +48 723 406 959 | 
+  #icon("media/mail.svg") #link("mailto:matipolit@gmail.com")[matipolit\@gmail.com] \
+  #icon("media/github.svg") #link("https://github.com/matipolit")[github.com/matipolit] | 
+  #icon("media/globe.svg") #link("https://matipolit.ovh")[matipolit.ovh] | 
+  #icon("media/linkedin.svg") #link("https://linkedin.com/in/mateusz-polito/")[linkedin.com/in/mateusz-polito/]
+]
+
+#v(1em)
 
 Software Engineer with 3 years of commercial experience in test automation and embedded Linux environments. Adept at developing custom tools, parsing hardware data, and maintaining HIL test rigs. Backed by a personal project portfolio in Rust, Python and web technologies, currently seeking to leverage this expertise in a full-time software development role.
 
-#v(1.5em)
-#grid(
-  columns: (1fr, 2fr),
-  gutter: 1.5em,
-  block(
-    fill: rgb("#f0f6fa"), // Very light, professional blue
-    inset: 1em,         // Equal padding on all sides
-    radius: 2pt,          // Optional: rounded corners for a modern look
-    [
-      == PERSONAL
-      #icon("media/map-pin.svg") Wrocław, Poland \
-      #icon("media/phone.svg") +48 723 406 959 \
-      #icon("media/mail.svg") #link("mailto:matipolit@gmail.com")[matipolit\@gmail.com] \
-      #icon("media/github.svg") #link("https://github.com/matipolit")[github.com/matipolit] \
-      #icon("media/globe.svg") #link("https://matipolit.ovh")[matipolit.ovh] \
-      #icon("media/linkedin.svg") #link("https://linkedin.com/in/mateusz-polito/")[linkedin.com/in/mateusz-polito/]
+#v(0.5em)
 
-      == SKILLS
-      *Languages:* \
-        Python ●●●●● \
-        Rust ●●●●○ \
-        JavaScript/TypeScript ●●●●○ \
-        Bash ●●●●○ \
-        C/C++ ●●●○○ \
-        Java ●●●○○ \
-        SQL ●●○○○ \
-      *Frameworks:* React, Svelte, Axum, QT, FastAPI, Robot Framework \
-      *Systems & Infrastructure:* Linux (including embedded), Docker, Git, nginx & Apache \
-      *AI usage:* GitHub Copilot, Cursor, Local LLMs
+== SKILLS
+#line(length: 100%, stroke: 0.5pt + luma(150))
+*Languages:* Advanced: Python, Rust, JavaScript/TypeScript, Bash | Intermediate: C/C++, Java, SQL \
+*TeleCom:* 4G, 5G, (e)CPRI, i2c \
+*Frameworks:* React, Svelte, Axum, QT, FastAPI, Robot Framework \
+*Systems & Infrastructure:* Linux (including embedded), Docker, Git, nginx, Apache \
+*AI usage:* GitHub Copilot, Cursor, Local LLMs \
+*Foreign Languages:* English (C2 - Cambridge), German (B1), Polish (Native)
 
-      == LANGUAGES
-      *English:* level C2 (Cambridge certificate) \
-      *German:* level B1 \
-      *Polish:* native
+#v(0.5em)
 
-    ]
-  ),
-  pad(top: 1em)[
-    == WORK EXPERIENCE
-    *Integration tester \@ Nokia* \
-    _August 2022 - Mar 2024, Mar 2025 - Present_
-    - Developed and maintained automated Python and Robot Framework test suites validating CPRI/eCPRI communication and embedded Linux software updates for radio units.
-    - Created an internal session management tool using Python to monitor RDP and SSH usage across test setups, preventing conflicts and unexpected session drops among integration team members.
-    - Accelerated the generation of boilerplate test suites and refactored legacy Python scripts by integrating GitHub Copilot and Cursor into the development workflow.
-    - Migrated multiple hardware test environments from Windows to Linux.
-    - Worked frequently with hardware on-site (Radio units, specialized optical testing devices, optical fiber cables).
-    - Tested on simulated future hardware (SIMICS).
+== WORK EXPERIENCE
+#line(length: 100%, stroke: 0.5pt + luma(150))
+*Integration tester \@ Nokia* #h(1fr) _Aug 2022 - Mar 2024, Mar 2025 - Aug 2026_
+- Developed and maintained automated Python and Robot Framework test suites validating CPRI/eCPRI communication and embedded Linux software updates for radio units.
+- Created an internal session management tool using Python to monitor RDP and SSH usage across test setups, preventing conflicts and unexpected session drops among integration team members.
+- Accelerated the generation of boilerplate test suites and refactored legacy Python scripts by integrating GitHub Copilot and Cursor into the development workflow.
+- Migrated multiple hardware test environments from Windows to Linux.
+- Worked frequently with hardware on-site (Radio units, specialized optical testing devices, optical fiber cables).
+- Tested on simulated future hardware (SIMICS).
 
-    == EDUCATION
-    *Wrocław University of Science and Technology* \
-    _March 2025 - June 2026_ \
-    Master's degree in Applied Computer Science. \
-    Final Grade: 5.0 / 5.0 \
-    Thesis: Automated benchmarking suite for ROS2 SLAM Algorithms. \
+#v(0.5em)
 
-    _October 2021 - January 2025_ \
-    Bachelor's degree in Applied Computer Science.
+== EDUCATION
+#line(length: 100%, stroke: 0.5pt + luma(150))
+*Wrocław University of Science and Technology* #h(1fr) _Mar 2025 - Jul 2026_ \
+Master's degree in Applied Computer Science. \
+Final Grade: 5.0 / 5.0 \
+Thesis: Automated benchmarking suite for ROS2 SLAM Algorithms.
 
-    == EXTRACURRICULAR ACTIVITIES
-    *KoNaR - Robotics Student Interest Group* \
-    _November 2021 - September 2022_ \
-    Member
+*Wrocław University of Science and Technology* #h(1fr) _Oct 2021 - Jan 2025_ \
+Bachelor's degree in Applied Computer Science.
 
-    == PROJECTS
-    - *Distributed Weather Station (Rust, ESP32, Raspberry Pi)* Monitoring node on ESP32, receiver program on Raspberry Pi, saving data to InfluxDB. Nodes communicated via shared message schema using serde.
-    - *Testing app for students (Svelte, Typescript)* A web app for the Question DB format used at my uni, replacing legacy Java apps.
-    - *Custom proxy (Rust)* Proxy replacing a legacy proprietary tool, handling UDP and XML/SOAP message translations.
-    - *Local LLM interface (Rust, QML):* Native UI for chatting with LLMs running on Llama.cpp, communicating via the OpenAI-compatible API.
-  ]
-)
+#v(0.5em)
+
+== PROJECTS
+#line(length: 100%, stroke: 0.5pt + luma(150))
+- *Distributed Weather Station (Rust, ESP32, Raspberry Pi):* Monitoring node on ESP32, receiver program on Raspberry Pi, saving data to InfluxDB. Nodes communicated via shared message schema using serde.
+- *Testing app for students (Svelte, Typescript):* A web app for the Question DB format used at my uni, replacing legacy Java apps.
+- *Custom proxy (Rust):* Proxy replacing a legacy proprietary tool, handling UDP and XML/SOAP message translations.
+- *Local LLM interface (Rust, QML):* Native UI for chatting with LLMs running on Llama.cpp, communicating via the OpenAI-compatible API.
