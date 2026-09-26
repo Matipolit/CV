@@ -1,6 +1,6 @@
 #set page(
   paper: "a4",
-  margin: (x: 1.5cm, y: 1.2cm)
+  margin: (x: 1.2cm, y: 1cm)
 )
 #set text(font: "Noto Sans", size: 10pt, hyphenate: false)
 
@@ -32,17 +32,17 @@
   #icon("media/linkedin.svg") #link("https://linkedin.com/in/mateusz-polito/")[linkedin.com/in/mateusz-polito/]
 ]
 
-#v(1em)
+#v(0.5em)
 
-Software Engineer with 3 years of commercial experience in test automation and embedded Linux environments. Adept at developing custom tools, parsing hardware data, and maintaining HIL test rigs. Backed by a personal project portfolio in Rust, Python and web technologies, currently seeking to leverage this expertise in a full-time software development role.
+Software Engineer with over 3 years of commercial experience in programming, test automation and embedded Linux environments. Adept at developing custom tools, parsing hardware data, and maintaining HIL test rigs. Backed by a personal project portfolio in Rust, Python and web technologies, currently seeking to leverage this expertise in a full-time software development role.
 
 #v(0.5em)
 
 == SKILLS
 #line(length: 100%, stroke: 0.5pt + luma(150))
-*Languages:* Advanced: Python, Rust, JavaScript/TypeScript, Bash | Intermediate: C/C++, Java, SQL \
+*Languages:* Advanced: Rust, Python, JavaScript/TypeScript, Bash | Intermediate: C/C++, Java, SQL \
 *TeleCom:* 4G, 5G, (e)CPRI, i2c \
-*Frameworks:* React, Svelte, Axum, QT, FastAPI, Robot Framework \
+*Frameworks:* React, Svelte, Axum, FastAPI, Robot Framework \
 *Systems & Infrastructure:* Linux (including embedded), Docker, Git, nginx, Apache \
 *AI usage:* GitHub Copilot, Cursor, Local LLMs \
 *Foreign Languages:* English (C2 - Cambridge), German (B1), Polish (Native)
@@ -51,10 +51,18 @@ Software Engineer with 3 years of commercial experience in test automation and e
 
 == WORK EXPERIENCE
 #line(length: 100%, stroke: 0.5pt + luma(150))
+*Developer \@ Hertz New Technologies* #h(1fr) _Sep 2026 - present_
+
+Developed and maintaned two Rust codebases:
+- *Simulator* for drones and drone detection devices:
+  - A config-driven world with various types of drones and detection devices (Radar, HRF, Optical)
+  - Realistic device behaviour, based on ICDs and captured real data, down to the frame
+  - Optional determinism (turning off random failures or misdetections) for reliable testing
+- *Fusion service* for integrating data from multiple sensors describing a single drone
+
 *Integration tester \@ Nokia* #h(1fr) _Aug 2022 - Mar 2024, Mar 2025 - Aug 2026_
 - Developed and maintained automated Python and Robot Framework test suites validating CPRI/eCPRI communication and embedded Linux software updates for radio units.
 - Created an internal session management tool using Python to monitor RDP and SSH usage across test setups, preventing conflicts and unexpected session drops among integration team members.
-- Accelerated the generation of boilerplate test suites and refactored legacy Python scripts by integrating GitHub Copilot and Cursor into the development workflow.
 - Migrated multiple hardware test environments from Windows to Linux.
 - Worked frequently with hardware on-site (Radio units, specialized optical testing devices, optical fiber cables).
 - Tested on simulated future hardware (SIMICS).
@@ -77,5 +85,3 @@ Bachelor's degree in Applied Computer Science.
 #line(length: 100%, stroke: 0.5pt + luma(150))
 - *Distributed Weather Station (Rust, ESP32, Raspberry Pi):* Monitoring node on ESP32, receiver program on Raspberry Pi, saving data to InfluxDB. Nodes communicated via shared message schema using serde.
 - *Testing app for students (Svelte, Typescript):* A web app for the Question DB format used at my uni, replacing legacy Java apps.
-- *Custom proxy (Rust):* Proxy replacing a legacy proprietary tool, handling UDP and XML/SOAP message translations.
-- *Local LLM interface (Rust, QML):* Native UI for chatting with LLMs running on Llama.cpp, communicating via the OpenAI-compatible API.
